@@ -29,69 +29,69 @@ We have language bindings in Shell and Javascript! You can view code examples in
 > To authorize, use this code:
 
 ```ruby
-require 'kittn'
+require 'americanicarus'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = AI::APIClient.authorize!('i.am.icarus')
 ```
 
 ```python
-import kittn
+import americanicarus 
 
-api = kittn.authorize('meowmeowmeow')
+api = americanicarus.authorize('i.am.icarus')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: i.am.icarus"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const kittn = require('americanicarus');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = kittn.authorize('i.am.icarus');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `i.am.icarus` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+americanicarus uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+americanicarus expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: i.am.icarus`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>i.am.icarus</code> with your personal API key.
 </aside>
 
-# Kittens
+# Locations
 
-## Get All Kittens
+## Get All Locations
 
 ```ruby
-require 'kittn'
+require 'americanicarus'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+api = AI::APIClient.authorize!('i.am.icarus')
+api.locations.get
 ```
 
 ```python
-import kittn
+import americanicarus 
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+api = americanicarus.authorize('i.am.icarus')
+api.locations.get()
 ```
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "https://api.americanicarus.com/locations"
+  -H "Authorization: i.am.icarus"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const location = require('location');
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+let api = location.authorize('i.am.icarus');
+let locations = api.locations.get();
 ```
 
 > The above command returns JSON structured like this:
@@ -115,11 +115,11 @@ let kittens = api.kittens.get();
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all locations.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET https://api.americanicarus.com/locations`
 
 ### Query Parameters
 
@@ -129,35 +129,35 @@ include_cats | false | If set to true, the result will also include cats.
 available | true | If set to false, the result will include kittens that have already been adopted.
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+Remember — a happy icarus is an authenticated kitten!
 </aside>
 
-## Get a Specific Kitten
+## Get a Specific location
 
 ```ruby
-require 'kittn'
+require 'americanicarus'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+api = AI::APIClient.authorize!('i.am.icarus')
+api.locations.get(2)
 ```
 
 ```python
-import kittn
+import location 
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
+api = location.authorize('i.am.icarus')
+api.locations.get(2)
 ```
 
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl "https://api.americanicarus.com/locations/2"
+  -H "Authorization: i.am.icarus"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const location = require('location');
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+let api = location.authorize('i.am.icarus');
+let max = api.locations.get(2);
 ```
 
 > The above command returns JSON structured like this:
@@ -172,17 +172,17 @@ let max = api.kittens.get(2);
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves a specific location.
 
 <aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET https://api.americanicarus.com/locations/<ID>`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the kitten to retrieve
+ID | The ID of the location to retrieve
 
