@@ -47,14 +47,14 @@ curl "api_endpoint_here"
 ```
 
 ```javascript
-const kittn = require('americanicarus');
+const location = require('americanicarus');
 
-let api = kittn.authorize('i.am.icarus');
+let api = location.authorize('i.am.icarus');
 ```
 
 > Make sure to replace `i.am.icarus` with your API key.
 
-americanicarus uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+americanicarus uses API keys to allow access to the API. You can register a new American Icarus Authentication API key at our [developer portal](http://example.com/developers).
 
 americanicarus expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
@@ -121,15 +121,9 @@ This endpoint retrieves all locations.
 
 `GET https://api.americanicarus.com/locations`
 
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
 
 <aside class="success">
-Remember — a happy icarus is an authenticated kitten!
+Remember — a happy icarus is an authenticated location!
 </aside>
 
 ## Get a Specific location
