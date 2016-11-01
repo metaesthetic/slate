@@ -98,19 +98,42 @@ let locations = api.locations.get();
 
 ```json
 [
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
+{
+    "_id": "57c7a6aba130ac4b8538bc0b",
+    "id": "1",
+    "title": "father's gravemarker",
+    "description": "",
+    "excerpt": "Leaving the circumference of the metallic ride behind I head for the graveyard on the other side of the small town. It is the place were we held father’s funeral in abstentia; his body never found. It’s autumn but soon the first snows will begin to fall and nobody will be able to read his name easily. Nobody will come visit his grave marker this year. ",
+    "longitude": "-85.352223",
+    "latitude": "42.954655",
+    "camera": {
+      "center": [
+        -85.352223,
+        42.954655
+      ],
+      "bearing": 36,
+      "zoom": 15,
+      "speed": 0.8
+    }
   },
   {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
+    "_id": "57c7a6c5a130ac4b8538bc0c",
+    "id": "2",
+    "title": "Hermon Dunlop Smith Center for Cartography",
+    "description": "",
+    "excerpt": "I was there to see a map, however, a very, very special map. The one that gave America its name. The fourth part of the world, drawn as it’s own continent, was baptized by a German Cartographer, Waldseemüller, who possessed epic vision and skill. This was America’s Confirmation, and I aimed to see it on this journey.",
+    "longitude": "-87.630618",
+    "latitude": "41.900012",
+    "camera": {
+      "center": [
+        -87.630618,
+        41.900012
+      ],
+      "bearing": 20,
+      "pitch": 60,
+      "zoom": 15,
+      "speed": 0.8
+    }
   }
 ]
 ```
@@ -143,7 +166,7 @@ api.locations.get(2)
 ```
 
 ```shell
-curl "https://api.americanicarus.com/locations/2"
+curl "https://api.americanicarus.com/locations/57c7a6f3a130ac4b8538bc10"
   -H "Authorization: i.am.icarus"
 ```
 
@@ -158,11 +181,23 @@ let max = api.locations.get(2);
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+  "_id": "57c7a6f3a130ac4b8538bc10",
+  "id": "6",
+  "title": "The Statue of Junipero Serra",
+  "description": "",
+  "excerpt": "He loomed large, but was comically sculpted as if a child cast him in silly putty. He pointed west and even a bit downward into the valley. I wondered if he was pointing towards the old resort town of Crystal Springs, now drowned completely by the waters. She told me how some friends of hers had hung an enormous sign from his finger, 'pull it', it had said.",
+  "longitude": "-122.363445",
+  "latitude": "37.538479",
+  "camera": {
+    "center": [
+      -122.363445,
+      37.538479
+    ],
+    "bearing": -50,
+    "pitch": 7,
+    "zoom": 16,
+    "speed": 1
+  }
 }
 ```
 
@@ -172,11 +207,11 @@ This endpoint retrieves a specific location.
 
 ### HTTP Request
 
-`GET https://api.americanicarus.com/locations/<ID>`
+`GET https://api.americanicarus.com/locations/<_id>`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the location to retrieve
+_id | The _id of the location to retrieve
 
