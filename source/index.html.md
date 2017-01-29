@@ -3,12 +3,10 @@ title: API Reference
 
 language_tabs:
   - shell
-  - ruby
-  - python
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://api.americanicarus.com/developers/key'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -54,7 +52,7 @@ let api = location.authorize('i.am.icarus');
 
 > Make sure to replace `i.am.icarus` with your API key.
 
-americanicarus uses API keys to allow access to the API. You can register a new American Icarus Authentication API key at our [developer portal](http://example.com/developers).
+americanicarus uses API keys to allow access to the API. You can register a new American Icarus Authentication API key at our [developer portal](https://api.americanicarus.com/developers).
 
 americanicarus expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
